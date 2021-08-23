@@ -114,6 +114,7 @@ section{
 }
 .para{
   font-size: 1em;
+ padding: 5px;
   margin: 10px;
 }
 .button{
