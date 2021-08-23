@@ -1,0 +1,122 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body{
+  background-color: rgb(18, 26, 31);
+  margin: 0 20px;
+}
+.heading{
+	font-size: 4em;
+	color: white;
+  animation: linear 0.5;
+}
+.heading:hover{
+  color: #08fdd8;
+}
+.para{
+  padding: 10px;
+  font-size: 1em;
+  color: white;
+}
+
+section {
+  background-color: rgb(18, 26, 31);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info{
+  width: 50%;
+
+}
+.container {
+  width: 50%;
+  max-width: 450px;
+  background-color: rgb(39, 55, 59);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.display {
+  background-color: rgb(182, 182, 182);
+  height: 100px;
+  width: 100%;
+  text-align: right;
+  padding: 20px;
+  font-size: 40px;
+  position: relative;
+}
+.display-1 {
+  opacity: 0.4;
+  font-size: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.all_button {
+  color: whitesmoke;
+  display: grid;
+  grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+.red{
+  background-color: crimson;;
+}
+.green{
+  background-color: green;
+}
+.yellow{
+  background-color: #08fdd8;
+  color: black;
+}
+.yellow:hover{
+  color: white;
+}
+
+.button {
+  border: 1px solid black;
+  display: inline-block;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: rgb(30, 43, 46);
+}
+.btn-0 {
+  grid-column: 1/3;
+}
+
+@media screen and (max-width: 800px) {
+body{
+  margin: 0 20px;
+}
+section{
+  flex-direction: column;
+  max-height: 80vh;
+}
+.heading{
+  font-size: 3em;
+}
+.info,.container{
+  margin: 10px;
+  width: 80%;
+}
+.para{
+  font-size: 1em;
+  margin: 10px;
+}
+.button{
+  height: 70px;
+}
+}
